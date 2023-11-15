@@ -3,7 +3,7 @@ package screen;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPasswordField;
+//import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.GridBagLayout;
@@ -59,9 +59,12 @@ private void crearComponentes() {
         gbc.weighty = 1.0;
         gbc.gridx = 0;
         gbc.gridy = 0;
+
         gbc.gridwidth = 4;
         gbc.gridheight = 1;
-        gbc.fill = GridBagConstraints.BOTH;
+
+//        gbc.fill = GridBagConstraints.BOTH;
+
         textJLabel = new JLabel("Empleados");
         textJLabel.setHorizontalAlignment(SwingConstants.CENTER);
         this.add(textJLabel, gbc);
@@ -75,6 +78,9 @@ private void crearComponentes() {
         gbc.gridwidth = 3;
         nombreJTextField = new JTextField(100);
 
+
+
+        
 }
 
 @Override
